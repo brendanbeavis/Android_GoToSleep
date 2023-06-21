@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "856424354761",
+    "firebase_url": "https://gotosleep-99f83.firebaseio.com",
+    "project_id": "gotosleep-99f83",
+    "storage_bucket": "gotosleep-99f83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856424354761:android:b46c3debbd9c15f3",
+        "android_client_info": {
+          "package_name": "com.smashedpotato.gotosleep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856424354761-5t15f6r9uaqn30ekh2bb7fbkhm13ndhs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smashedpotato.gotosleep",
+            "certificate_hash": "4ad26edc1b8825e8d6054a626df0c2a647eb68c6"
+          }
+        },
+        {
+          "client_id": "856424354761-2pfbk8fs5f99i95o17ad6s2toa74a6th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7cofjF-X5c9Oi3UZbTPCtEe-QxV7sVPI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856424354761-2pfbk8fs5f99i95o17ad6s2toa74a6th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

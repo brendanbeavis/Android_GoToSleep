@@ -1,0 +1,177 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor" >
+<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banner" />
+    <TextView
+        android:id="@+id/tHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:text="@string/heading"
+        android:textAppearance="?android:attr/textAppearance" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tHeading"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker1"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/tRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignStart="@+id/linearLayout1"
+            android:checked="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/repeat"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tRepeat"
+            android:layout_centerHorizontal="true" >
+
+            <ToggleButton
+                android:id="@+id/togSun"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textOff="@string/S"
+                android:textOn="@string/S" />
+
+            <ToggleButton
+                android:id="@+id/togMon"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textOff="@string/M"
+                android:textOn="@string/M" />
+
+            <ToggleButton
+                android:id="@+id/togTue"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textOff="@string/T"
+                android:textOn="@string/T" />
+
+            <ToggleButton
+                android:id="@+id/togWed"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textOff="@string/W"
+                android:textOn="@string/W" />
+
+            <ToggleButton
+                android:id="@+id/togThu"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textOff="@string/T"
+                android:textOn="@string/T" />
+
+            <ToggleButton
+                android:id="@+id/togFri"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textOff="@string/F"
+                android:textOn="@string/F" />
+
+            <ToggleButton
+                android:id="@+id/togSat"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textOff="@string/S"
+                android:textOn="@string/S" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Switch
+        android:id="@+id/switchEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:onClick="buttonClick"
+        android:text="@string/enabled" />
+   
+   <LinearLayout
+    android:id="@+id/sleepScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/blackScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:background="@color/black"
+        android:visibility="gone">
+    </LinearLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_below="@+id/switchEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        android:visibility="gone"
+        android:text="@string/comment" />
+<Button
+    android:id="@+id/btnPP"
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/switchEnable"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:text="@string/PP"/>
+    <RelativeLayout
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@+id/btnPP"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+
+
+</RelativeLayout>
+</ScrollView>
